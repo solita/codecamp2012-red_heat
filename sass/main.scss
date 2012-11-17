@@ -1,0 +1,95 @@
+@import "compass/reset";
+
+html {
+	background-color: red;
+}
+
+* {
+	overflow: hidden;	
+}
+
+#gameinput {
+	background-color: white;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	padding: 20px;
+	font-size: 40px;
+}
+
+#compo {
+	display: none;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	font-size: 50px;
+	bottom: 120px;
+}
+
+#quote {
+	top: 25%;
+	width: 500px;
+	text-align: center;
+	font-size: 30px;
+	position: absolute;
+	margin-left: -250px;
+}
+
+#quoteForRemoval {
+  top: 25%;
+  font-size: 30px;
+  position: absolute;
+  margin-left: -150px;
+}
+
+
+.quoteIn {
+	-webkit-animation: fromLeft 1s linear;
+	-webkit-animation-fill-mode: both;
+}
+
+.quoteOut {
+	-webkit-animation: fromCenterRight 1s linear;
+	-webkit-animation-fill-mode: both;
+}
+
+#heat {
+	bottom: 95px;
+	left: 0%;
+	position: absolute;
+	font-size: 30px;
+}
+
+#time {
+	bottom: 95px;
+	left: 90%;
+	position: absolute;
+	font-size: 30px;
+}
+
+.correct {
+  color: green;
+}
+
+.fail {
+  color: red;
+}
+
+@-webkit-keyframes fromLeft {
+	0% {
+		left:-250px;
+	}
+	100% {
+		left:50%;
+	}
+}
+
+@-webkit-keyframes fromCenterRight {
+	0% {
+		left:50%;
+	}
+	100% {
+		left:150%;
+	}
+}
